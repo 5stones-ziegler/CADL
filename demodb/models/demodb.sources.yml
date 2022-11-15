@@ -1,0 +1,12 @@
+version: 2
+# name raw is the "raw" schema in postgres instance
+sources:
+  - name: raw
+    loader: "colab for now"
+    config:
+      enabled: true
+    tables:
+      - name: t_ticket_w  # enabled
+      - name: ignore_this_one  # not enabled
+        config:
+          enabled: false
