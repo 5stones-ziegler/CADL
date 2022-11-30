@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: tickets_wbb
+    description: simple season ticket model for WBB
+    docs:
+      show: true
+    columns:
+      - name: w_ticket_id
+        description: integer ticket id
+      - name: season_code
+        description: season info
+      - name: item_code
+        description: plan item code
+      - name: item_full_name
+        description: name of plan
+      - name: event_code
+        description: name of individual event
+      - name: event_full_name
+        description: individual event name
+      - name: price_level_code
+        description: price level
+      - name: section_name
+        description: name of section
+      - name: row_name
+        description: name/number of row
+      - name: first_seat
+        description: first seat of range
+      - name: last_seat
+        description: last seat of range
+      - name: num_seats_event
+        description: number of seats
+      - name: seat_loc
+        description: full seat location
+      - name: event_date
+        description: date of event
+      - name: event_time
+        description: time of event
+      - name: customer_id
+        description: assigned id for customer
+      - name: first_name
+        description: customer first name
+      - name: last_name
+        description: last name of customer
+      - name: email_addr
+        description: email address of customer
+      - name: price_type_code
+        description: type of ticket
+      - name: price_type_desc
+        description: description of type of ticket
+      - name: event_price
+        description: price of individual event
+      - name: event_payment
+        description: payment towards individual event
+      - name: item_amt
+        description: amount of plan item
+      - name: item_payment
+        description: payment towards plan item
+      - name: item_price
+        description: price of 1 unit of plan item
+      - name: orig_datetime
+        description: first purchase date maybe
+      - name: mark_code
+        description: sales code
+      - name: promo_code
+        description: promo code name during purchase
+      - name: bill_plan
+        description: bill plan name
+      - name: delivery_method
+        description: delivery method
+
