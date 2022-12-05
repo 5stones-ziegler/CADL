@@ -1,0 +1,6 @@
+version: 2
+
+seeds:
+  - name: packages
+    config:
+      schema: ticket_seed
