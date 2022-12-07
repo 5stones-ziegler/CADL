@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: seasons
+    description: table of season ticket purchases
+    docs:
+      show: true
+    columns:
+      - name: customer_id
+        description: unique customer identifier
+      - name: season_code
+        description: season info
+      - name: item_code
+        description: plan item code
+      - name: seat_loc
+        description: seat location
+      - name: price_level_full
+        description: price level name
+      - name: price_type_desc
+        description: description of type of ticket
+      - name: seat_count
+        description: number of season tickets
+      - name: cost
+        description: total cost of season ticket item line
+      - name: payments
+        description: payments made towards season ticket item line
+      - name: balance_due
+        description: remaining balance of season ticket item line
+      - name: purchase_datetime
+        description: datetime of season ticket purchase
+
