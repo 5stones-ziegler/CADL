@@ -1,6 +1,6 @@
-Package ID,Season Year,Sport Type,Item Code,Item Type
-WBB2022-23,2022-23,Womens Basketball,WBB,Full Season
-WBB2021-22,2021-22,Womens Basketball,WBB,Full Season
-WBB2020-21,2020-21,Womens Basketball,WBB,Full Season
-WB62022-23,2022-23,Womens Basketball,WB6,Mini Plan
-WB62021-22,2021-22,Womens Basketball,WB6,Mini Plan
+Package ID,Season Year,Sport Type,Item Code,Item Type, Event Count
+WBB2022-23,2022-23,Womens Basketball,WBB,Full Season, 13
+WBB2021-22,2021-22,Womens Basketball,WBB,Full Season, 13
+WBB2020-21,2020-21,Womens Basketball,WBB,Full Season, 13
+WB62022-23,2022-23,Womens Basketball,WB6,Mini Plan, 13
+WB62021-22,2021-22,Womens Basketball,WB6,Mini Plan, 13
