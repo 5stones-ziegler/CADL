@@ -16,7 +16,7 @@ FROM {{ source('raw', 't_ticket_w')}} t
 INNER JOIN {{ ref('seed_packages') }} s
 ON CONCAT(t.season_code, '-', t.item_code) = s.event_id
 AND lower(s.item_type) = 'full season'
-GROUP BY 1,2,3,4,5,6,7,8
+GROUP BY 1,2,3,4,5,6,7,8,9
 )
 SELECT *,
 sum(seat_count) OVER (PARTITION BY season_code ORDER BY purchase_datetime asc) as renewed_seats_to_date,
