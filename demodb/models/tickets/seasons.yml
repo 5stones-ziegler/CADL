@@ -12,7 +12,7 @@ models:
         description: season info
       - name: item_code
         description: plan item code
-      - name: renewal_opendate
+      - name: onsale_date
         description: first date season package could be renewed
       - name: renewal_deadline
         description: last date season package could be renewed
@@ -38,6 +38,6 @@ models:
         description: running total of renewed seats by date
       - name: renewed_days_before_deadline
         description: days between renewal date and deadline
-      - name: renewed_days_after_open
-        description: days between renewal date and renewal opening
+      - name: renewed_days_after_onsale
+        description: days between renewal date and renewal onsale
 
