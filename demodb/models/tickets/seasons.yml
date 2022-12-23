@@ -16,6 +16,8 @@ models:
         description: first date season package could be renewed
       - name: renewal_deadline
         description: last date season package could be renewed
+      - name: section_name
+        description: section name for seat location
       - name: seat_loc
         description: seat location
       - name: price_level_full

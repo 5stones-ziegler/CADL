@@ -1,4 +1,4 @@
-event_id,season_year,sport_type,item_code,item_type,event_count,renewal_opendate,renewal_deadline
+event_id,season_year,sport_type,item_code,item_type,event_count,onsale_date,renewal_deadline
 WBB2223-WBB,2022-23,Women's Basketball,WBB,Full Season,13,2022-09-10 00:00:00,2022-10-31 23:59:59
 WBB2122-WBB,2021-22,Women's Basketball,WBB,Full Season,13,2021-09-10 00:00:00,2021-10-31 23:59:59 
 WBB2021-WBB,2020-21,Women's Basketball,WBB,Full Season,13,2020-09-10 00:00:00,2020-10-31 23:59:59 
