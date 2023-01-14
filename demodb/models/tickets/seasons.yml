@@ -1,5 +1,4 @@
 version: 2
-
 models:
   - name: seasons
     description: table of season ticket purchases
@@ -8,36 +7,86 @@ models:
     columns:
       - name: customer_id
         description: unique customer identifier
+        meta:
+          dimension:
+            type: number
       - name: season_code
         description: season info
+        meta:
+          dimension:
+            type: string
       - name: item_code
         description: plan item code
+        meta:
+          dimension:
+            type: string
       - name: onsale_date
         description: first date season package could be renewed
+        meta:
+          dimension:
+            type: timestamp
       - name: renewal_deadline
         description: last date season package could be renewed
+        meta:
+          dimension:
+            type: timestamp
       - name: section_name
         description: section name for seat location
+        meta:
+          dimension:
+            type: string
       - name: seat_loc
         description: seat location
+        meta:
+          dimension:
+            type: string
       - name: price_level_full
         description: price level name
+        meta:
+          dimension:
+            type: string
       - name: price_type_desc
         description: description of type of ticket
+        meta:
+          dimension:
+            type: string
       - name: seat_count
         description: number of season tickets
+        meta:
+          dimension:
+            type: number
       - name: cost
         description: total cost of season ticket item line
+        meta:
+          dimension:
+            type: number
       - name: payments
         description: payments made towards season ticket item line
+        meta:
+          dimension:
+            type: number
       - name: balance_due
         description: remaining balance of season ticket item line
+        meta:
+          dimension:
+            type: number
       - name: purchase_datetime
         description: datetime of season ticket purchase
+        meta:
+          dimension:
+            type: timestamp
       - name: renewed_seats_to_date
         description: running total of renewed seats by date
+        meta:
+          dimension:
+            type: number
       - name: renewed_days_before_deadline
         description: days between renewal date and deadline
+        meta:
+          dimension:
+            type: number
       - name: renewed_days_after_onsale
         description: days between renewal date and renewal onsale
-
+        meta:
+          dimension:
+            type: number

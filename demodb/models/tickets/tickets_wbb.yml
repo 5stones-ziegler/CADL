@@ -1,5 +1,4 @@
 version: 2
-
 models:
   - name: tickets_wbb
     description: simple season ticket model for WBB
@@ -8,64 +7,161 @@ models:
     columns:
       - name: w_ticket_id
         description: integer ticket id
+        meta:
+          dimension:
+            type: number
       - name: season_code
         description: season info
+        meta:
+          dimension:
+            type: string
       - name: item_code
         description: plan item code
+        meta:
+          dimension:
+            type: string
       - name: item_full_name
         description: name of plan
+        meta:
+          dimension:
+            type: string
       - name: event_code
         description: name of individual event
+        meta:
+          dimension:
+            type: string
       - name: event_full_name
         description: individual event name
+        meta:
+          dimension:
+            type: string
       - name: price_level_code
         description: price level
+        meta:
+          dimension:
+            type: string
       - name: section_name
         description: name of section
+        meta:
+          dimension:
+            type: string
       - name: row_name
         description: name/number of row
+        meta:
+          dimension:
+            type: string
       - name: first_seat
         description: first seat of range
+        meta:
+          dimension:
+            type: string
       - name: last_seat
         description: last seat of range
+        meta:
+          dimension:
+            type: string
       - name: num_seats_event
         description: number of seats
+        meta:
+          dimension:
+            type: number
       - name: seat_loc
         description: full seat location
+        meta:
+          dimension:
+            type: string
       - name: event_date
         description: date of event
+        meta:
+          dimension:
+            type: date
       - name: event_time
         description: time of event
+        meta:
+          dimension:
+            type: timestamp
       - name: customer_id
         description: assigned id for customer
+        meta:
+          dimension:
+            type: number
       - name: first_name
         description: customer first name
+        meta:
+          dimension:
+            type: string
       - name: last_name
         description: last name of customer
+        meta:
+          dimension:
+            type: string
       - name: email_addr
         description: email address of customer
+        meta:
+          dimension:
+            type: string
       - name: price_type_code
         description: type of ticket
+        meta:
+          dimension:
+            type: string
       - name: price_type_desc
         description: description of type of ticket
+        meta:
+          dimension:
+            type: string
       - name: event_price
         description: price of individual event
+        meta:
+          dimension:
+            type: number
       - name: event_payment
         description: payment towards individual event
+        meta:
+          dimension:
+            type: number
       - name: item_amt
         description: amount of plan item
+        meta:
+          dimension:
+            type: number
       - name: item_payment
         description: payment towards plan item
+        meta:
+          dimension:
+            type: number
       - name: item_price
         description: price of 1 unit of plan item
+        meta:
+          dimension:
+            type: number
       - name: orig_datetime
         description: first purchase date maybe
+        meta:
+          dimension:
+            type: timestamp
       - name: mark_code
         description: sales code
+        meta:
+          dimension:
+            type: string
       - name: promo_code
         description: promo code name during purchase
+        meta:
+          dimension:
+            type: string
       - name: bill_plan
         description: bill plan name
+        meta:
+          dimension:
+            type: string
       - name: delivery_method
         description: delivery method
-
+        meta:
+          dimension:
+            type: string
+      - name: price_level_full
+        description: ""
+        meta:
+          dimension:
+            type: string
