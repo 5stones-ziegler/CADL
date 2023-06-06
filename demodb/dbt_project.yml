@@ -40,6 +40,9 @@ models:
     tickets:
       +materialized: view
       +schema: tickets
+    customers:
+      +materialized: view
+      +schema: customers
 
 
 

@@ -7,6 +7,7 @@ sources:
       enabled: true
     tables:
       - name: t_ticket_w  # enabled
+      - name: dim_customers
       - name: ignore_this_one  # not enabled
         config:
           enabled: false
