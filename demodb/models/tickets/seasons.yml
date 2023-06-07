@@ -4,12 +4,19 @@ models:
     description: table of season ticket purchases
     docs:
       show: true
+    meta:
+      joins:
+        - join: dim_customers
+          sql_on: ${seasons.customer_id} = ${dim_customers.customer_id}
     columns:
       - name: customer_id
         description: unique customer identifier
         meta:
           dimension:
             type: number
+          metrics:
+            unique_customers:
+              type: count_distinct
       - name: season_code
         description: season info
         meta:
@@ -55,16 +62,25 @@ models:
         meta:
           dimension:
             type: number
+          metrics:
+            total_seats:
+              type: sum
       - name: cost
         description: total cost of season ticket item line
         meta:
           dimension:
             type: number
+          metrics:
+            total_cost:
+              type: sum
       - name: payments
         description: payments made towards season ticket item line
         meta:
           dimension:
             type: number
+          metrics:
+            total_payments:
+              type: sum
       - name: balance_due
         description: remaining balance of season ticket item line
         meta:

@@ -1,0 +1,37 @@
+version: 2
+models:
+  - name: dim_customers
+    columns:
+      - name: customer_id
+          meta:
+            metrics:
+              customer_count:
+                type: count
+      - name: first_name
+      - name: last_name
+      - name: email_addr
+      - name: donor_level
+      - name: donation_amount_lifetime
+          meta:
+            metrics:
+              total_donation_amount_lifetime:
+                type: sum
+      - name: donation_amount _drive_year
+          meta:
+            metrics:
+              total_donation_amount_drive_year:
+                type: sum
+      - name: wbb_consec_sth
+          meta:
+            metrics:
+              avg_consec_sth:
+                type: average
+      - name: mbb_consec_sth
+      - name: fb_consec_sth
+      - name: wbb_renewal_prediction
+      - name: primary_sport
+      - name: distance_from_venue
+          meta:
+            metrics:
+              avg_distance_from_venue:
+                type: average
